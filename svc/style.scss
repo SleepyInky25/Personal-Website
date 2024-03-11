@@ -26,7 +26,7 @@ body{
   var(--bgclr-2),
   var(--bgclr-3),
   var(--bgclr-4));
-  background-size: auto auto;
+  // background-size: auto auto;
   margin-left: var(--pdgbr);
   
   /*Aniamted Keyframes*/
@@ -57,7 +57,7 @@ body{
 }
 
 /*Add space for the box on the left for the sidebar */
-#items{
+#centerboxitems{
   margin-left: 6.5rem;
   align-items: center;
 }
@@ -65,9 +65,9 @@ body{
 /*box for sidebar on the left*/
 .sidenav {
   border-right: 2px solid white;
-  height: 100%;
   width: 6rem;
-  position: flex;
+  height: 100%;
+  
   float: left;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@ body{
   overflow: hidden;
 }
 
-.centertext {
+.centernavtext {
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -99,12 +99,12 @@ body{
 /*border around the website*/
 .border {
   border: 2px solid rgb(255, 255, 255);
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+  // padding: 0;
+  // margin: 0;
+  height: 100%;
   width: auto;
   overflow: hidden;
-}
+} 
 
 /*stylization of the scrollbar*/
 ::-webkit-scrollbar {
