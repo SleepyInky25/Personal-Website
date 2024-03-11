@@ -1,0 +1,103 @@
+:root {
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /*background colors*/
+  --bgclr-1: #000000;
+  --bgclr-2: #060019;
+  --bgclr-3: #1a002d;
+  --bgclr-4: #5f013e;
+  /*track colors*/
+  --trckclr-1: #000000;
+  --trckclr-2: #242424;
+  --trckclr-3: #484848;
+  /*pertentages*/
+  --pdgbr: 6rem;
+  scroll-behavior: smooth;
+}
+
+/*Animated Background */
+body {
+  color: rgb(255, 255, 255);
+  background: radial-gradient(var(--bgclr-1), var(--bgclr-2), var(--bgclr-3), var(--bgclr-4));
+  background-size: auto auto;
+  margin-left: var(--pdgbr);
+  /*Aniamted Keyframes*/
+  animation: AnimationGrad 25s ease infinite;
+  padding: 0;
+  margin: 0;
+}
+
+/*Background Animation frames*/
+@keyframes AnimationGrad {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+/*Add space for the box on the left for the sidebar */
+#items {
+  margin-left: 6.5rem;
+  align-items: center;
+}
+
+/*box for sidebar on the left*/
+.sidenav {
+  border-right: 2px solid white;
+  height: 100%;
+  width: 6rem;
+  position: flex;
+  float: left;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--bgclr-1);
+  overflow: hidden;
+}
+
+.centertext {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-left: 0.5;
+}
+
+.centerbox {
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  background: var(--bgclr-1);
+  margin-left: 21rem;
+  height: 100%;
+  width: 36rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/*border around the website*/
+.border {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+}
+
+/*stylization of the scrollbar*/
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--trckclr-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--trckclr-2);
+}/*# sourceMappingURL=style.css.map */
