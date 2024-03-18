@@ -38,26 +38,29 @@ body {
     background-position: 0% 0%;
   }
 }
-/*Add space for the box on the left for the sidebar */
-#centerboxitems {
-  margin-left: 6.5rem;
-  align-items: center;
+/*border around the website*/
+.border {
+  border: 2px solid rgb(255, 255, 255);
+  height: 100%;
+  width: auto;
+  overflow: hidden;
 }
 
-/*box for sidebar on the left*/
-.sidenav {
+/*sidebar box to the left of the website*/
+.sidebar {
   border-right: 2px solid white;
   width: 6rem;
   height: 100%;
   float: left;
-  top: 0;
+  /*top: 0;*/
   left: 0;
   z-index: -1;
   background: var(--bgclr-1);
   overflow: hidden;
 }
 
-.centernavtext {
+/* Centers sidebar content */
+.sidebaritems {
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -66,6 +69,7 @@ body {
   margin-left: 0.5;
 }
 
+/* The box in the center of the page */
 .centerbox {
   border-right: 2px solid white;
   border-left: 2px solid white;
@@ -77,12 +81,10 @@ body {
   overflow: hidden;
 }
 
-/*border around the website*/
-.border {
-  border: 2px solid rgb(255, 255, 255);
-  height: 100%;
-  width: auto;
-  overflow: hidden;
+/* Center items for the box in the middle of the page */
+#centerboxitems {
+  margin-left: 6.5rem;
+  align-items: center;
 }
 
 /*stylization of the scrollbar*/
