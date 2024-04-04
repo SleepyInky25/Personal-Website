@@ -12,12 +12,9 @@
   --trckclr-3: #484848;
   /*pertentages*/
   --pdgbr: 6rem;
-  scroll-behavior: smooth;
   border: 2px solid rgb(255, 255, 255);
-  height: 100vh;
 }
 
-/* Background */
 body {
   color: rgb(255, 255, 255);
   background: linear-gradient(var(--bgclr-1), var(--bgclr-2), var(--bgclr-3), var(--bgclr-4));
@@ -25,32 +22,20 @@ body {
   margin: 0;
 }
 
-/* The box in the center of the page */
+.sidebar {
+  border-right: 2px solid white;
+  background: var(--bgclr-1);
+  margin-top: 0;
+  height: 100vh;
+  width: 6rem;
+  float: left;
+}
+
 .centerbox {
   border-right: 2px solid white;
   border-left: 2px solid white;
   background: var(--bgclr-1);
-  margin-left: 21rem;
-  height: 100vh;
+  margin-right: 15rem;
   width: 36rem;
-  overflow: hidden;
-}
-
-/* Center items for the box in the middle of the page */
-#centerboxitems {
-  margin-left: 6.5rem;
-  align-items: center;
-}
-
-/*stylization of the scrollbar*/
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--trckclr-1);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--trckclr-2);
+  float: right;
 }/*# sourceMappingURL=style.css.map */
