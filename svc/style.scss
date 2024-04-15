@@ -36,10 +36,20 @@ body {
 }
 
 .centerbox {
-  border-right: 2px solid white;
   border-left: 2px solid white;
+  border-right: 2px solid white;
   background: var(--bgclr-1);
-  margin-right: 15rem;
-  width: 36rem;
-  float: right;
+  margin-top: 0;
+  margin-left: 12rem;
+  height: 100vh;
+  width: 42rem;
+  float: left;
 }
+
+.allign-items {
+  align-items: center;
+}
+
+
+
+
