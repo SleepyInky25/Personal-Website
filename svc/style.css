@@ -6,6 +6,7 @@
   --bgclr-2: #060019;
   --bgclr-3: #1a002d;
   --bgclr-4: #5f013e;
+  --pageheight: 150vh;
   /*track colors*/
   --trckclr-1: #000000;
   --trckclr-2: #242424;
@@ -19,16 +20,17 @@ body {
   color: rgb(255, 255, 255);
   background: linear-gradient(var(--bgclr-1), var(--bgclr-2), var(--bgclr-3), var(--bgclr-4));
   background-repeat: no-repeat;
+  height: flex;
   margin: 0;
 }
 
 .sidebar {
   border-right: 2px solid white;
   background: var(--bgclr-1);
-  margin-top: 0;
-  height: 100vh;
+  height: flex;
   width: 6rem;
   float: left;
+  align-items: center;
 }
 
 .centerbox {
@@ -37,11 +39,9 @@ body {
   background: var(--bgclr-1);
   margin-top: 0;
   margin-left: 12rem;
-  height: 100vh;
+  height: 100%;
   width: 42rem;
   float: left;
-}
-
-.allign-items {
   align-items: center;
+  padding-left: 4rem;
 }/*# sourceMappingURL=style.css.map */
